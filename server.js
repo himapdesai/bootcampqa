@@ -85,7 +85,7 @@ app.get('/_api/get-tests', cors(), function (req, res, next) {
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
   console.log("Listening on port " + port);
-  console.log('Running Tests...');
+  console.log('Running Tests... on http://localhost:3000');
   setTimeout(function () {
     try {
       runner.run();
