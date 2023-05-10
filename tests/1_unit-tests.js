@@ -12,7 +12,7 @@ suite('Unit Tests', function () {
     test('#isDefined, #isUndefined', function () {
       assert.isDefined(null, 'null is not undefined');
       assert.isUndefined(undefined, 'undefined IS undefined');
-      assert.isUndefined('hello', 'A string is not undefined');
+      assert.isDefined('hello', 'A string is not undefined');
     });
     // // #3
     // test('#isOk, #isNotOk', function () {
