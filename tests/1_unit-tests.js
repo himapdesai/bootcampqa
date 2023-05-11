@@ -39,12 +39,12 @@ suite('Equality', function () {
       assert.notEqual(6 + '2', '12');
     });
 //     // #6
-//     test('#strictEqual, #notStrictEqual', function () {
-//       assert.fail(6, '6');
-//       assert.fail(6, 3 * 2);
-//       assert.fail(6 * '2', 12);
-//       assert.fail([1, 'a', {}], [1, 'a', {}]);
-//     });
+    test('#strictEqual, #notStrictEqual', function () {
+      assert.notStrictEqual(6, '6');
+      assert.strictEqual(6, 3 * 2);
+      assert.strictEqual(6 * '2', 12);
+      assert.notStrictEqual([1, 'a', {}], [1, 'a', {}]);
+    });
 //     // #7
 //     test('#deepEqual, #notDeepEqual', function () {
 //       assert.fail({ a: '1', b: 5 }, { b: 5, a: '1' }, "The order of keys doesn't matter");
