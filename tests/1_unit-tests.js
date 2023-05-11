@@ -30,8 +30,8 @@ suite('Unit Tests', function () {
 
   // -----------------------------------------------------------------------------
 
-// suite('Equality', function () {
-//     // #5
+suite('Equality', function () {
+    // #5
     test('#equal, #notEqual', function () {
       assert.equal(12, '12', 'Numbers are coerced into strings with ==');
       assert.notEqual({ value: 1 }, { value: 1 }, '== compares object references');
@@ -50,7 +50,7 @@ suite('Unit Tests', function () {
 //       assert.fail({ a: '1', b: 5 }, { b: 5, a: '1' }, "The order of keys doesn't matter");
 //       assert.fail({ a: [5, 6] }, { a: [6, 5] }, 'The order of array elements does matter');
 //     });
-//   });
+  });
 
 //   // -----------------------------------------------------------------------------
 
