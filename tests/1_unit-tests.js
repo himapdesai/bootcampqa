@@ -148,13 +148,13 @@ suite('Equality', function () {
       assert.property(myCar, 'wheels', 'Cars have wheels');
     });
 //     // #17
-//     test('#typeOf, #notTypeOf', function () {
-//       assert.fail(myCar, 'object');
-//       assert.fail(myCar.model, 'string');
-//       assert.fail(airlinePlane.wings, 'string');
-//       assert.fail(airlinePlane.engines, 'array');
-//       assert.fail(myCar.wheels, 'number');
-//     });
+    test('#typeOf, #notTypeOf', function () {
+      assert.typeOf(myCar, 'object');
+      assert.typeOf(myCar.model, 'string');
+      assert.notTypeOf(airlinePlane.wings, 'string');
+      assert.typeOf(airlinePlane.engines, 'array');
+      assert.typeOf(myCar.wheels, 'number');
+    });
 //     // #18
 //     test('#instanceOf, #notInstanceOf', function () {
 //       assert.fail(myCar, Plane);
