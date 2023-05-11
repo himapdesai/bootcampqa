@@ -82,20 +82,20 @@ suite('Equality', function () {
 
 //   // -----------------------------------------------------------------------------
 
-//   const winterMonths = ['dec,', 'jan', 'feb', 'mar'];
-//   const backendLanguages = ['php', 'python', 'javascript', 'ruby', 'asp'];
-//   suite('Arrays', function () {
-//     // #11
-//     test('#isArray, #isNotArray', function () {
-//       assert.fail('isThisAnArray?'.split(''), 'String.prototype.split() returns an array');
-//       assert.fail([1, 2, 3].indexOf(2), 'indexOf returns a number');
-//     });
-//     // #12
-//     test('Array #include, #notInclude', function () {
-//       assert.fail(winterMonths, 'jul', "It's summer in july...");
-//       assert.fail(backendLanguages, 'javascript', 'JS is a backend language');
-//     });
-//   });
+  const winterMonths = ['dec,', 'jan', 'feb', 'mar'];
+  const backendLanguages = ['php', 'python', 'javascript', 'ruby', 'asp'];
+  suite('Arrays', function () {
+    // #11
+    test('#isArray, #isNotArray', function () {
+      assert.isArray('isThisAnArray?'.split(''), 'String.prototype.split() returns an array');
+      assert.isNotArray([1, 2, 3].indexOf(2), 'indexOf returns a number');
+    });
+    // // #12
+    // test('Array #include, #notInclude', function () {
+    //   assert.fail(winterMonths, 'jul', "It's summer in july...");
+    //   assert.fail(backendLanguages, 'javascript', 'JS is a backend language');
+    // });
+  });
 
 //   // -----------------------------------------------------------------------------
 
